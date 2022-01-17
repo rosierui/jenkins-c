@@ -7,6 +7,8 @@ pipeline {
         stage('Build C Program') {
             steps {
                 echo 'calling make'
+                pwd
+                ls -l
                 make
             }
         }
